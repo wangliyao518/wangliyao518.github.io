@@ -1,0 +1,56 @@
+---
+title: "赞助支持leo"
+permalink: /support/
+items:
+  - name: 淘宝
+    link: "/static/img/support/alipay."
+    image-link: "/static/img/support/alipay."
+  - name: 微信
+    link: "/static/img/support/Wechat."
+    image-link: "/static/img/support/Wechat."
+description: "正如这个教学网站, 如果没有大家的支持, 是做不起来的.<br />
+为了明天的更好, 我需要更加的努力来更新, 我也需要大家持续关注与监督.<br />
+为了明天的更好, 我也有一个网店,也需要大家持续关注与监督.<br />
+我会把最好的质量奉献给大家. 让你我的明天都更加的美好!
+"
+---
+
+<div class="pad-main section ie-size">
+  <h1 class="page-title">为了明天更美好</h1>
+
+
+  <p>
+    正如这个教学网站, 如果没有大家的支持, 是做不起来的.<br />
+    为了明天的更好, 我需要更加的努力来更新, 我也需要大家持续关注与监督.<br />
+    为了明天的更好, 我也有一个网店,也需要大家持续关注与监督.<br />
+    我会把最好的质量奉献给大家. 让你我的明天都更加的美好!
+  </p>
+
+  <br>
+  <hr>
+  <div id="support-box">
+      <div id="support-box-wrapper">
+        {% for item in page.items %}
+          <div>
+            <h3>{{ item.name }}</h3>
+            <a href="{{ item.link }}">
+              <div class="support-dropdown">
+                <img style="{% if item.name != 'Paypal' %} border-radius: 10px;  box-shadow: 0px 0px 10px 1px  #888888; {% endif %}"
+                     src="{{ item.image-link }}"
+                     alt="{{ item.name }}">
+
+                {% if item.name != 'Paypal' and item.name != 'Patreon' %}
+                  <div class="support-SD-dropdown">
+                    <img style="{% if item.name != 'Paypal' %} border-radius: 10px;  box-shadow: 0px 0px 10px 1px  #888888; {% endif %}"
+                         src="{{ item.image-link }}"
+                         alt="{{ item.name }}">
+                  </div>
+                {% endif %}
+              </div>
+            </a>
+          </div>
+        {% endfor %}
+      </div>
+  </div>
+</div>
+

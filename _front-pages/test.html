@@ -1,0 +1,50 @@
+---
+title: test
+permalink: /test/
+youtube_id: 
+youku_id: 
+---
+
+
+
+<div class="section">
+	<p></p>
+	<div class="video-container">
+		<iframe
+				width="560" height="315"
+				src=""
+				frameborder="0"
+				allowfullscreen>
+		</iframe>
+	</div>
+</div>
+
+<div class="section">
+	<p></p>
+	<div class="video-container">
+		<iframe
+				width="780" height="480" frameborder="0" allowfullscreen
+				src="">
+		</iframe>
+	</div>
+</div>
+
+
+
+<div class="section">
+	<p id="check3"></p>
+	<iframe
+			id="myVideoTest"
+			class="myvideo" width="780" height="480"
+			src=""
+			frameborder="0" allowfullscreen></iframe>
+</div>
+
+
+
+<script type="text/javascript">
+	if(!FlashDetect.installed){
+		$("#myVideoTest").remove();
+		alert("No Flash");
+	}
+</script>

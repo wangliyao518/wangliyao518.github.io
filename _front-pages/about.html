@@ -1,0 +1,97 @@
+---
+title: "关于leo"
+youtube_id: 
+youku_id:
+bilibili_id: 
+permalink: /about/
+thumbnail: /static/img/description/my_pic.jpg
+items:
+  - [text, Email, "wangliyao518@hotmail.com"]
+  - [link, 优酷, "http://id.tudou.com/i/UNTMzODk2MDA0?spm=a2hzp.8244740.0.0"]
+  - [link, Github, "https://github.com/wangliyao518"]
+  - [link, 知乎, "https://www.zhihu.com/people/luyaozhi/"]
+description: "我叫wang liyao, 英文名leo,取这个名字谐音也是一个重要原因, 细细算来, 学些python这门语言也近10个年头了.
+用python代码写过开发代码,写过各种级别的测试代码, 也玩过现在流行的机器学习, 但在python的浩瀚海洋里, 我永远是那个
+<em>蹒跚学步</em>小孩, 而抱着<em>初生牛犊不怕虎</em>的我也乐意在这里和大家分享一些学习的经验!希望不要见笑于大方之家!"
+---
+
+<h1 style="display:none; padding:0; margin:0;">{{page.title}}</h1>
+<div class="section ie-size">
+	<!--p>{% include embedded-video.html %}</p-->
+	<div class="pad-main">
+		<p>
+			<img class="lazy-img" data-src="/static/img/description/my_pic.jpg" src=""
+			     alt="My picture" style="float:left;width:20%;padding:10px;border-radius:50%;">
+		  我叫 <strong>wang liyao</strong> , 在python的浩瀚海洋里, 我永远是那个
+		  <em>蹒跚学步</em>小孩, 而抱着<em>初生牛犊不怕虎</em>的我也乐意在这里和大家分享一些学习的经验!希望不要见笑于大方之家!
+		</p>
+		<p>
+            我很欣赏网上那些默默奉献的活雷锋, 独乐了不如众乐乐. 好东西也应该拿出来于大家分享
+			所以这就是我创建 <a href="http://i.youku.com/python" target="_blank"><em>优酷</em></a> 
+			个人编程频道. 我也要回报那些奉献的人们, 将我的所学奉献给大家~
+		</p>
+		<p>
+		  涉及内容<i>python, robot, clean code, linux, machine learning</i> 等.
+		</p>
+
+		<br>
+		<h2 class="small-h1">
+			我的一点点技能 (leo's skill)
+		</h2>
+		<table class="my-background-table">
+			<colgroup>
+				<col width="15%" />
+				<col width="35%" />
+				<col width="50%" />
+			</colgroup>
+			<tbody>
+				<tr>
+					<td>1</td>
+					<td>python</td>
+					<td>线程,进程, paramiko, xml, socket, wxpython, django, webspider</td>
+				</tr>
+				<tr>
+					<td>2</td>
+					<td>测试自动化</td>
+					<td>UnitTest, robotframework, selenium, TestPartner</td>
+				</tr>
+				<tr>
+					<td>3</td>
+					<td>机器学习</td>
+					<td>sklearn, numpy, pandas, TensorFlow</td>
+				</tr>
+				<tr>
+					<td>4</td>
+					<td>others</td>
+					<td>SVN/GIT, pycharm/eclipse/VS/vim, linux, docker, ELK, clean code</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<br>
+
+		<h2 class="small-h1">
+			讨论与观看动向
+		</h2>
+		<p>
+		    联系到我有很多种方式, 欢迎大家用各种途径留言, 有时间的话, 我会尽量回复你的留言或问题. 以下是几种可以讨论的方式:
+		</p>
+		<div id="contact-table" style="font-size:0.9em;">
+			{% for item in page.items %}
+				<div class="row">
+				  <p style="color: #028e3d;">{{ item[1] }}:</p>
+					{% if item[0] == "link" %}
+				    <a href="{{ item[2] }}" style="font-size:0.7em;" target="_blank">
+					    {{ item[2] }}
+				    </a>
+					{% elsif item[0] == "text" %}
+					  <span style="text-decoration:none; color:#00b359;" >
+					    {{ item[2] }}
+				    </span>
+					{% endif %}
+				</div>
+			{% endfor %}
+
+		</div>
+	</div>
+</div>
